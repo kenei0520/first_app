@@ -1,0 +1,16 @@
+<div class="wrapper wrapper__bg">
+  <div class="container">
+     <h1>2chクローン</h1>
+    <%= link_to "スレッド新規作成", new_board_path %>
+    <hr>
+       <div class="panel">
+      <% @boards.each do |board| %>
+      <%= link_to board.title, board_path(board) %> </br>
+      <div class="image-background">
+      
+      </div>
+
+      <% end %>
+     </div>
+   </div>
+ </div>
